@@ -17,7 +17,7 @@ body, quote-input {
 }
 
 .container{
-    background-color: purple;
+    background-color: pink;
     padding: 1rem;
     border-radius: .5rem;
     width: 700px;
@@ -29,7 +29,7 @@ body, quote-input {
     position: absolute;
     top: 2rem;
     font-size: 3rem;
-    color:purple;
+    color:black;
     font-weight: bold;
 
 }
@@ -39,6 +39,7 @@ body, quote-input {
     margin-left: calc(1rem + 2px);
     margin-right: calc(1rem + 2px);
     font-size: 1.1rem;
+    font-weight: bold;
 }
 
 .quote-input{
