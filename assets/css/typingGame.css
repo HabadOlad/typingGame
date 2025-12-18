@@ -1,0 +1,73 @@
+@font-face {
+  font-family: "Apercu Mono Pro";
+  /* Browser will try woff2 first (better compression), then fallback to woff */
+  src: url("assets/css/font/font (1)/ApercuMonoPro-Medium.woff2")
+      format("woff2"),
+    url("assets/css/font/font (1)/ApercuMonoPro-Medium.woff") format("woff");
+
+  /* Always define weight and style to prevent "faux" bolding/italics */
+  font-weight: 500; /* Medium is typically 500 */
+  font-style: normal;
+  font-display: swap; /* Shows fallback font until custom font loads */
+}
+
+* {
+  font-family: "Apercu Mono Pro", monospace;
+  font: "Apercu Mono Pro";
+}
+
+#quoteDisplay {
+  /* Set left and right margins to 'auto' to horizontally center it */
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-size: 30px;
+}
+
+.button {
+  font-size: 16px;
+  font-weight: 200;
+  letter-spacing: 1px;
+  padding: 13px 20px 13px;
+  outline: 0;
+  border: 1px solid black;
+  cursor: pointer;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button:after {
+  content: "";
+  background-color: #00ff00;
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  top: 7px;
+  left: 7px;
+  transition: 0.2s;
+}
+
+.button:hover:after {
+  top: 0px;
+  left: 0px;
+  color: #00ff00;
+}
+
+@media (min-width: 768px) {
+  .button {
+    padding: 13px 50px 13px;
+  }
+}
+
+.Button-container {
+  /* Set a defined width for the div (must be less than 100%) */
+  width: 250px;
+
+  /* Set left and right margins to 'auto' to horizontally center it */
+  margin-left: auto;
+  margin-right: auto;
+}
